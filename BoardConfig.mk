@@ -99,6 +99,9 @@ TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := device/motorola/droid2/releasetools
 # Droid2 requires the common boot hijack
 TARGET_NEEDS_MOTOROLA_HIJACK := true
 
+# Droid2 requires mot_boot_mode
+TARGET_NEEDS_MOTOROLA_BOOT_MODE := true
+
 TARGET_RECOVERY_PRE_COMMAND := "echo 1 > /data/.recovery_mode; sync;"
 TARGET_RECOVERY_PRE_COMMAND_CLEAR_REASON := true
 endif

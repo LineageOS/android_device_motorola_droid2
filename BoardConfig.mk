@@ -24,6 +24,7 @@
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
 USE_CAMERA_STUB := false
+
 #BOARD_USE_YUV422I_DEFAULT_COLORFORMAT := true
 
 # inherit from the proprietary version
@@ -31,7 +32,6 @@ USE_CAMERA_STUB := false
 
 # use pre-kernel.35 vold usb mounting
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
-BOARD_USE_FROYO_LIBCAMERA := true
 
 TARGET_BOARD_PLATFORM := omap3
 
@@ -98,6 +98,16 @@ TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := device/motorola/droid2/releasetools
 
 # Droid2 requires the common boot hijack
 TARGET_NEEDS_MOTOROLA_HIJACK := true
+
+# MOTOROLA
+USE_MOTOROLA_CODE := true
+ifdef USE_MOTOROLA_CODE
+COMMON_GLOBAL_CFLAGS += -DUSE_MOTOROLA_CODE
+endif
+USE_MOTOROLA_USERS := true
+ifdef USE_MOTOROLA_USERS
+COMMON_GLOBAL_CFLAGS += -DUSE_MOTOROLA_USERS
+endif
 
 TARGET_RECOVERY_PRE_COMMAND := "echo 1 > /data/.recovery_mode; sync;"
 TARGET_RECOVERY_PRE_COMMAND_CLEAR_REASON := true

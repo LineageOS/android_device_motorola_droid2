@@ -40,6 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ril.features=0x07 \
     persist.ril.mux.retries=500 \
     persist.ril.mux.sleep=2 \
+    ro.default_usb_mode=4 \
     ro.product.multi_touch_enabled=true \
     ro.product.max_num_touch=2 \
     ro.telephony.sms_segment_size=160 \
@@ -60,6 +61,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
     ro.cdma.data_retry_config=default_randomization=2000,0,0,120000,180000,540000,960000 \
     ro.com.motorola.smartsensor=true \
+    ro.media.sensor.orient=90 \
     ro.media.capture.maxres=5m \
     ro.media.capture.fast.fps=4 \
     ro.media.capture.slow.fps=60 \
@@ -76,6 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.version.full=Blur_Version.2.3.340.MB810.Verizon.en.US \
     ro.build.config.version=GAS_NA_DROID2VZW_P011 \
     ro.build.config.date=Fri_Sep_17_21:53:21_-0500_2010 \
+    ro.kernel.android.checkjni=0 \
 
 #############################################################
 #    debug.mot.extwmlog=1 \
@@ -142,6 +145,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/motorola/droid2/utilities/mke2fs:system/bin/mke2fs \
     device/motorola/droid2/utilities/tune2fs:system/bin/tune2fs \
+    device/motorola/droid2/releaseutils/check_kernel:system/etc/check_kernel \
     device/motorola/droid2/releaseutils/finalize_release:system/etc/finalize_release
 
 # copy all kernel modules under the "modules" directory to system/lib/modules

@@ -5,6 +5,7 @@
 rild.libpath=/system/lib/libmoto_ril.so
 rild.libargs=-d /dev/ttyS0
 ro.sf.lcd_density=240
+ro.default_usb_mode=4
 ro.usb.use_custom_service=1
 # BEGIN Motorola, a18772, 05/19/2010, IKDROID2-5584
 # Add 411 to DAN List for VZW.
@@ -15,7 +16,7 @@ persist.ril.modem.mode =1
 # This defines the max event window manager can
 # handle in 1 s. We may adjust this # for performance
 # reason later
-windowsmgr.max_events_per_sec=55
+windowsmgr.max_events_per_sec=100
 # This defines the min duration between two pointer event
 ro.min_pointer_dur=10
 
@@ -37,12 +38,12 @@ ro.cdma.home.operator.alpha=Verizon
 ro.config.vc_call_vol_steps=7
 
 # wlan interface
-wifi.interface = tiwlan0
+wifi.interface=tiwlan0
 
 # Time between scans in seconds. Keep it high to minimize battery drain.
 # This only affects the case in which there are remembered access points,
 # but none are in range.
-wifi.supplicant_scan_interval = 90
+wifi.supplicant_scan_interval=90
 
 # Indicate carrier OTA SP number schema
 # refer to frameworks/base/telephony/java/com/android/

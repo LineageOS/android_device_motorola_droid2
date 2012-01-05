@@ -406,7 +406,7 @@ service btautoip /system/bin/dhcpcd -BK bnep0
 service baseimage /system/bin/dspexec -v -T /system/lib/dsp/baseimage.dof
     class media_early_init
     user media
-    group media graphics
+    group media graphics mot_whisper audio
     oneshot
 
 service pvrsrv /system/bin/pvrsrvinit

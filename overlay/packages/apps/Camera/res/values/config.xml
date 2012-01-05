@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="touchFocusParameter">mot-areas-to-focus</string>
+    <bool name="focusCamcorderAtStart">false</bool>
     <bool name="touchFocusNeedsRect">true</bool>
+    <string name="touchFocusParameter">mot-areas-to-focus</string>
 </resources>
-

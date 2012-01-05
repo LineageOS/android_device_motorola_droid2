@@ -100,6 +100,11 @@ class EdifyGenerator(object):
                          for b in bootloaders]) +
            ");")
     self.script.append(self._WordWrap(cmd))
+  
+  def AssertKernelVersion(self):
+    self.script.append('package_extract_file("system/etc/check_kernel", "/tmp/check_kernel");')
+    self.script.append('set_perm(0, 0, 0777, "/tmp/check_kernel");')
+    self.script.append('assert(run_program("/tmp/check_kernel") == 0);');
 
   def RunBackup(self, command):
     self.script.append('package_extract_file("system/bin/backuptool.sh", "/tmp/backuptool.sh");')
@@ -183,7 +188,7 @@ class EdifyGenerator(object):
     if fstab:
       p = fstab[mount_point]
       self.script.append('mount("%s", "%s", "%s", "%s");' %
-                         ("ext3", common.PARTITION_TYPES["ext3"],
+                         (p.fs_type, common.PARTITION_TYPES[p.fs_type],
                           p.device, p.mount_point))
       self.mounts.add(p.mount_point)
     else:

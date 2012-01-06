@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAO3///YU\u003d",
+        "filename": "releasetools/droid2_ota_from_target_files",
+        "patchSetId": 1
+      },
+      "lineNbr": 348,
+      "author": {
+        "id": 1502
+      },
+      "writtenOn": "2012-01-06T20:20:48Z",
+      "side": 1,
+      "message": "Whitespace.",
+      "revId": "1dd424296d38952ca99aac8e6c94e08de3e95a3e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAO3///YQ\u003d",
+        "filename": "releasetools/droid2_ota_from_target_files",
+        "patchSetId": 1
+      },
+      "lineNbr": 356,
+      "author": {
+        "id": 1502
+      },
+      "writtenOn": "2012-01-06T20:20:48Z",
+      "side": 1,
+      "message": "Might want to remove the banner for the official tree.",
+      "revId": "1dd424296d38952ca99aac8e6c94e08de3e95a3e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

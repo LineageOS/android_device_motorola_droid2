@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAO3///Yg\u003d",
+        "filename": "overlay/frameworks/base/core/res/res/values/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1502
+      },
+      "writtenOn": "2012-01-06T20:20:48Z",
+      "side": 0,
+      "message": "Don\u0027t delete this file. It\u0027s needed since the actual LED colors don\u0027t quite match up to the labels.",
+      "revId": "9175fea58c3a5eb0cdb5aaa16d9f6c104661bd41",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAO3///Yc\u003d",
+        "filename": "overlay/packages/apps/CMParts/res/values/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1502
+      },
+      "writtenOn": "2012-01-06T20:20:48Z",
+      "side": 0,
+      "message": "Same as before. This is needed since the LED colors don\u0027t match up.",
+      "revId": "9175fea58c3a5eb0cdb5aaa16d9f6c104661bd41",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAO3///YY\u003d",
+        "filename": "overlay/packages/apps/Camera/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1502
+      },
+      "writtenOn": "2012-01-06T20:20:48Z",
+      "side": 0,
+      "message": "These values shouldn\u0027t be removed.",
+      "revId": "9175fea58c3a5eb0cdb5aaa16d9f6c104661bd41",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

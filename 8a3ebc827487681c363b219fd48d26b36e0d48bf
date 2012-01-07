@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAO3///SY\u003d",
+        "filename": "droid2.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1502
+      },
+      "writtenOn": "2012-01-07T01:40:26Z",
+      "side": 1,
+      "message": "This can be removed. Since we don\u0027t use MotoUsb anymore this property does nothing.",
+      "revId": "8a3ebc827487681c363b219fd48d26b36e0d48bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAO3///Sg\u003d",
+        "filename": "init.mapphone_umts.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1502
+      },
+      "writtenOn": "2012-01-07T01:40:26Z",
+      "side": 1,
+      "message": "Hate to be nitpicky but some trailing whitespace in a couple places in this file and a couple others.",
+      "revId": "8a3ebc827487681c363b219fd48d26b36e0d48bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAO3///SU\u003d",
+        "filename": "system.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1502
+      },
+      "writtenOn": "2012-01-07T01:40:26Z",
+      "side": 1,
+      "message": "Same as before. This can be removed.",
+      "revId": "8a3ebc827487681c363b219fd48d26b36e0d48bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
